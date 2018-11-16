@@ -1,0 +1,9 @@
+Pinebook Touchpad Firmware Writer
+
+To update firmware run:
+
+$ sudo ./pbtp-fw-writer -w fw.bin -s 6
+
+To convert firmware from hex to bin:
+
+$ objcopy -I ihex --output-target=binary firmware.hex firmware.bin
